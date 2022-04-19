@@ -5,70 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
-    <link rel="stylesheet" href="style_registration_form.css">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="static/css/style.css">
+    <script src="static/js/script.js" defer></script>
 </head>
 <body>
-    <article class="container">
+<article class="container">
 
-        <div class="block">
+    <div class="block">
 
-            <section class="block__item block-item">
-                <h2 class="block-item__title">У вас уже есть аккаунт?</h2>
-                <button class="block-item__btn signin-btn">Войти</button>
-            </section>
-            <section class="block__item block-item">
-                <h2 class="block-item__title">Нет аккаунта?</h2>
-                <button class="block-item__btn signup-btn">Зарегестрироваться</button>
-            </section>
+        <section class="block__item block-item">
+            <h2 class="block-item__title">У вас уже есть аккаунт?</h2>
+            <button class="block-item__btn signin-btn">Войти</button>
+        </section>
+        <section class="block__item block-item">
+            <h2 class="block-item__title">Нет аккаунта?</h2>
+            <button class="block-item__btn signup-btn">Зарегестрироваться</button>
+        </section>
 
-        </div>
+    </div>
 
-        <!--Блок формы-->
-        <div class="form-box">
-            <form action="#" class="form form_signin">
-                <h3 class="form__title">Вход</h3>
+    <!--Блок формы-->
+    <div class="form-box">
+        <form action="#" class="form form_signin">
+            <h3 class="form__title">Вход</h3>
 
-                <p>
-                    <input type="text" class="form__input" placeholder="Логин">
-                </p>
-                <p>
-                    <input type="password" class="form__input" placeholder="Пароль">
-                </p>
-                <p>
-                    <button class="form__btn">Войти</button>
-                </p>
-                <p>
-                    <a href="#" class="form__forgot">Забыли пароль?</a>
-                </p>
-            </form>
-            <!--Регистрация-->
-            <form action="#" class="form form_signup">
-                <h3 class="form__title">Регистрация</h3>
+            <p>
+                <input type="text" class="form__input" placeholder="Логин">
+            </p>
+            <p>
+                <input type="password" class="form__input" placeholder="Пароль">
+            </p>
+            <p>
+                <button class="form__btn">Войти</button>
+            </p>
+            <p>
+                <a href="#" class="form__forgot">Забыли пароль?</a>
+            </p>
+        </form>
+        <!--Регистрация-->
+        <form action="#" class="form form_signup">
+            <h3 class="form__title">Регистрация</h3>
 
-                <p>
-                    <input type="text" class="form__input" placeholder="Логин">
-                </p>
-                <p>
-                    <input type="email" class="form__input" placeholder="Email">
-                </p>
-                <p>
-                    <input type="password" class="form__input" placeholder="Пароль">
-                </p>
-                <p>
-                    <input type="password" class="form__input" placeholder="Подтвердите пароль">
-                </p>
-                <label class="rad-label">
-                    <input type="radio" class="rad-input" name="rad">
-                    <div class="rad-design"></div>
-                    <div class="rad-text">Согласен на обработку данных</div>
-                </label>
-                <p>
-                    <button class="form__btn form__btn_signup">Зарегестрироваться</button>
-                </p>
-            </form>
-        </div>
+            <p>
+                <input type="text" class="form__input" placeholder="Логин">
+            </p>
+            <p>
+                <input type="email" class="form__input" placeholder="Email">
+            </p>
+            <p>
+                <input type="password" class="form__input" placeholder="Пароль">
+            </p>
+            <p>
+                <input type="password" class="form__input" placeholder="Подтвердите пароль">
+            </p>
+            <label class="rad-label">
+                <input type="radio" class="rad-input" name="rad">
+                <div class="rad-design"></div>
+                <div class="rad-text">Согласен на обработку данных</div>
+            </label>
+            <p>
+                <button class="form__btn form__btn_signup">Зарегистрироваться</button>
+            </p>
+        </form>
+    </div>
 
-    </article>
+</article>
 </body>
 </html>
