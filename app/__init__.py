@@ -1,16 +1,19 @@
 from flask import Flask
-from config import Config
+import config
 from .main import main
+from .auth import auth
+from .admin import admin
+from .feedback import feedback
 
-# создание экземпляра приложения с текущими конфигурациями
-app = Flask(__name__)
-app.config.from_object(Config)
 
-# регистрация блюпринта
-app.register_blueprint(main)
+def create_app():
+    app = Flask(__name__, instance_relative_config=False)
+    app.config.from_object(config.DevelopmentConfig)
 
-# проверка верной текущей конфигурации приложения
-for key, value in app.config.items():
-    print(f'{key}: {value}')
-print(app.config['DEBUG'])
-print(app.config['SECRET_KEY'])
+    with app.app_context():
+        app.register_blueprint(main)
+        app.register_blueprint(auth)
+        app.register_blueprint(admin)
+        app.register_blueprint(feedback)
+
+    return app
