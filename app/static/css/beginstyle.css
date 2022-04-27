@@ -1,0 +1,142 @@
+@font-face {
+    font-family: 'Arial';
+    font-style: regular;
+    font-weight: regular;
+    src: local('arial-regular'),
+     url('/shelter/assets/fonts/fonts/arial/') format('ttf'),
+  }
+  @font-face {
+    font-family: 'Georgia Regular';
+    src: url('Georgia.eot');
+    src: url('Georgia.eot?#iefix') format('embedded-opentype'),
+    url('/shelter/assets/fonts/fonts/georgia/Georgia.woff') format('woff'),
+    url('/shelter/assets/fonts/fonts/georgia/georgia-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+  a {
+    text-decoration: none;
+}
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    list-style-type: none;
+  }
+/*.header_bg{
+    background-color: #f0f0f0;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    margin-top: -51px;
+    padding-bottom: 30px;
+  }*/
+  .wrapper {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+  }
+  .header_container{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
+  .logo {
+    margin-top: 48px;
+  }
+  
+  .title {
+    font-size: 32px;
+    font-weight: 400;
+    font-family: Georgia;
+    color: #545454;
+    line-height: 45%;
+    letter-spacing: 0.06em;
+  }
+  
+  .subtitle {
+    color: #292929;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: Arial;
+    letter-spacing: 0.1em;
+    text-align: right;
+  }
+  .header__burger{
+    display: none;
+  }
+  .navigation {
+    margin-top: 74px;
+  }
+  
+  .menu {
+    display: flex;
+  }
+  
+  .menu_item {
+    list-style-type: none;
+  }
+  
+  .menu_link {
+    font-size: 15px;
+    color:#545454;
+    line-height: 160%;
+  }
+  .menu_link_active{
+    font-size: 15px;
+    color:#292929;
+    line-height: 160%;
+    border-bottom: 2px solid #F1CDB3;
+    padding-bottom: 7px;
+  }
+  .menu_link:hover{
+    color:#1f1e1e;
+  }
+  .menu_item:not(:last-child):after {
+    content: '';
+    margin-right: 35px;
+  }
+
+/*---------------------------*/
+.tree_container{
+    margin-top: 50px;
+}
+.main_tree {
+
+}
+
+.tree_first {
+    padding: 14px 20px 14px 30px;
+    line-height: 1.3;
+    background: #fff;
+    position: relative;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.tree_second {
+    padding: 14px 20px 14px 30px;
+    line-height: 1.3;
+    background: #fff;
+    position: relative;
+    border: 1px solid #ccc;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.tree_first:hover {
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.4);
+    color: rgb(139, 139, 139);
+}
+.tree_second:hover{
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.4);
+    color: rgb(139, 139, 139);
+}
+
+/*----------------*/
+.footer{
+  margin-top: 20px;
+  text-align: center;
+  font-size: 30px;
+}
